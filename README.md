@@ -48,6 +48,7 @@ This classifier could help e-commerce platforms:
 For the machine learning models, random forest achieved the highest accuracy score as well as highest F1, recall and precision. It used the maximum range of estimators, 200, and max_depth=None. 
 
 ![Visual](visualizations/ML_classifier_feature_importance.png)
+
 **Feature importances utilized in random forest model. Engineered features are in red while TF-IDF features are in blue**
 
 ![Visual](visualizations/ML_classifier_importance_chart.png)
