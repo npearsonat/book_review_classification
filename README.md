@@ -1,13 +1,13 @@
 # Review Helpfulness Classifier
 
-A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.
+A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.</br>
+**Dataset Source:** Kaggle Amazon Book Reviews: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
 
 ## Key Findings
 
 **High-impact features discovered:**
 - **Review length matters most**: Reviews with 50-200 words are 3x more likely to be helpful
-- **Balanced sentiment wins**: Reviews mixing positive and negative words outperform purely positive ones
-- **Technical language helps**: Product-specific terminology strongly predicts helpfulness
+- **Positive sentiment wins**: Reviews mixing positive and negative words outperform purely positive ones
 
 **Model Performance:**
 - **96% accuracy** on 13,000+ review dataset
@@ -20,7 +20,7 @@ This classifier could help e-commerce platforms:
 - **Reduce customer decision time** by surfacing quality feedback first  
 - **Improve user experience** by filtering low-quality reviews automatically
 
-## Technical Approach
+## Approach
 
 **Feature Engineering Innovation:**
 - Combined TF-IDF text vectors with 9 custom linguistic features
