@@ -1,6 +1,6 @@
 # Review Helpfulness Classifier
 
-A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.</br>
+A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers.</br>
 
 **Dataset Source:** Kaggle Amazon Book Reviews: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
 
