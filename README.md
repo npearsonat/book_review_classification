@@ -1,6 +1,6 @@
 # Review Helpfulness Classifier
 
-**A neural network that predicts whether product reviews will be helpful to other customers with 82% accuracy.**
+A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.
 
 ## Key Findings
 
