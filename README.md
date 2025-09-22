@@ -49,7 +49,7 @@ This classifier could help e-commerce platforms:
 
 **Machine learning classification accuracy results for review helpfulness classification**
 
-For the machine learning models, random forest achieved the highest accuracy score as well as highest F1, recall and precision. It used the maximum range of estimators, 200, and max_depth=None. 
+Random forest achieved the highest accuracy score as well as highest F1, recall and precision. It used the maximum range of estimators, 200, and max_depth=None. 
 
 ![Visual](visualizations/ML_classifier_feature_importance.png)
 
