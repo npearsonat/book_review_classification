@@ -12,8 +12,8 @@ A demonstration of machine learning and neural network models that predict wheth
 
 **Model Performance:**
 - **96% accuracy for NN** on 13,000+ review dataset
-- **73% accuracy using ML**
 - **0.995 AUC score** with good precision-recall balance
+- **73% accuracy using ML** with expansive feature importance investigation.
 
 ## Business Impact
 
