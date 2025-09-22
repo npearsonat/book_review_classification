@@ -1,4 +1,4 @@
-<img width="842" height="427" alt="image" src="https://github.com/user-attachments/assets/bab5ab23-e1c8-404c-893e-b4d5a6dfa031" /># Review Helpfulness Classifier
+# Review Helpfulness Classifier
 
 A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.</br>
 
