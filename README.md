@@ -42,6 +42,7 @@ This classifier could help e-commerce platforms:
 
 ## Sample Results
 
+![Visual](visualizations/ML_classifier_accuracy.png)
 
 ## Quick Demo
 
