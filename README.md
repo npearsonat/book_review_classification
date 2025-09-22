@@ -72,12 +72,10 @@ This model obtained much better evaulation metrics accross the board, and overal
 
 ## Key Takeaways
 
-This project demonstrates the classic **interpretability vs. performance trade-off** in machine learning:
 - **Random Forest (73% accuracy)**: Provided clear insights into what makes reviews helpful
 - **Neural Network (96% accuracy)**: Achieved superior performance but as a "black box"
 
-The feature engineering work proved valuable for both approaches - engineered features like polarity score and review length were among the most predictive, showing that domain knowledge still matters even with advanced models.
-
-**Next Steps:** Deploy the neural network for production use while leveraging the interpretable model insights for business recommendations.
+- **Platform**: Surface helpful reviews first, improving customer decision-making and automatically flag low-quality content for moderation
+- **Product impact**: Understand what customers value in peer feedback
 
 *Built with Python, scikit-learn, and pandas. No heavy ML frameworks required.*
