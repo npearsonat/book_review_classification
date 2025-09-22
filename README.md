@@ -13,7 +13,7 @@ A demonstration of machine learning and neural network models that predict wheth
 **Model Performance:**
 - **96% accuracy for NN** on 13,000+ review dataset
 - **0.995 AUC score** with good precision-recall balance
-- **73% accuracy using ML** with expansive feature importance investigation.
+- **72% accuracy using ML** with expansive feature importance investigation.
 
 ## Business Impact
 
@@ -73,7 +73,7 @@ This model obtained much better evaulation metrics accross the board, and overal
 
 ## Key Takeaways
 
-- **Random Forest (73% accuracy)**: Provided clear insights into what makes reviews helpful
+- **Random Forest (72% accuracy)**: Provided clear insights into what makes reviews helpful
 - **Neural Network (96% accuracy)**: Achieved superior performance but as a "black box"
 
 - **Platform**: Surface helpful reviews first, improving customer decision-making and automatically flag low-quality content for moderation
