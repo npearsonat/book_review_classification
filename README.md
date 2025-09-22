@@ -1,4 +1,4 @@
-# Review Helpfulness Classifier
+<img width="842" height="427" alt="image" src="https://github.com/user-attachments/assets/bab5ab23-e1c8-404c-893e-b4d5a6dfa031" /># Review Helpfulness Classifier
 
 A demonstration of machine learning and neural network models that predict whether product reviews will be helpful to other customers. Achieved 73% accuracy with ML and 96% with neural network.</br>
 
@@ -29,7 +29,7 @@ This classifier could help e-commerce platforms:
 - Cleaned up columns and combined metadata and review datasets.
 
 **Feature Engineering Innovation:**
-- Created helpfull/not helpfull feature based on helpfullness scores of greater than 0.8. 
+- Created helpful/not helpful feature based on helpfullness scores of greater than 0.8. 
 - Combined TF-IDF text vectors with 11 custom linguistic features
 - Engineered sentiment ratio features that captured review nuance better than basic sentiment scores
 - Created writing style indicators (caps ratio, punctuation patterns) that proved surprisingly predictive
@@ -42,7 +42,10 @@ This classifier could help e-commerce platforms:
 
 ## Results
 
+### Machine Learning Models
+
 ![Visual](visualizations/ML_classifier_accuracy.png)
+
 **Machine learning classification accuracy results for review helpfulness classification**
 
 For the machine learning models, random forest achieved the highest accuracy score as well as highest F1, recall and precision. It used the maximum range of estimators, 200, and max_depth=None. 
@@ -57,35 +60,14 @@ For the machine learning models, random forest achieved the highest accuracy sco
 
 When looking at the feature importances of the random forest model, the pre-engineered features were much more prominent individually, although vastly outnumbered. Polarity score was the most important engineered feature, with reviews having higher polarity score being sorted as helpful. You can see a variety of features are more associated with helpful reviews, such as having a longer length, higher word count and lower question count. This gives us some simpler insight into what readers may be looking for in a review. 
 
-## Quick Demo
+### Neural Network Model
 
-```python
-from text_classifier import build_classifier
-import pandas as pd
+![Visual](visualizations/NN_classifier.png)
 
-# Train on your review data
-df = pd.read_csv('reviews.csv')
-classifier = build_classifier(df)
+**Results of Multi-Layer Perceptron (MLP) classifier from sci-kit-learn**
 
-# Get predictions with confidence scores
-result = classifier.check_review("Your review text here")
-print(f"Prediction: {result['prediction']} ({result['confidence']:.2f})")
-```
+This model turns text into numerical features using TF-IDF and engineered features. The ~12,000 features pass through three hidden layers (384→192→96 neurons) that learn increasingly complex patterns: the first layer picks up useful phrases, the second layer combines them into writing patterns, and the last layer predicts overall helpfulness. Each neuron uses ReLU to keep positive signals, and the Adam optimizer adjusts the connections during training. The network learns by comparing its predictions to known helpful/unhelpful reviews, gradually improving its accuracy on new reviews.
 
-## Installation
-
-```bash
-git clone https://github.com/yourusername/review-helpfulness-classifier
-cd review-helpfulness-classifier
-pip install -r requirements.txt
-```
-
-## Dataset Requirements
-
-Works with any review dataset containing:
-- Review text (`review/text` or `review/summary` columns)
-- Binary helpfulness labels (`is_helpful`: 1 for helpful, 0 for not helpful)
-
----
+This model obtained much better evaulation metrics accross the board, and overall is much better at predicting whether a review will be helpful. However, with this neural network model we cannot see the precise feature importances like we can with the machine learning models. 
 
 *Built with Python, scikit-learn, and pandas. No heavy ML frameworks required.*
