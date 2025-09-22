@@ -24,12 +24,12 @@ This classifier could help e-commerce platforms:
 ## Approach
 
 **Data Cleaning:**
-- Selected rows with greater than 10 helpfullness ratings.
+- Selected rows with greater than 10 helpfulness ratings.
 - Took random sample of 100k remaining rows for ease of use.
 - Cleaned up columns and combined metadata and review datasets.
 
 **Feature Engineering Innovation:**
-- Created helpful/not helpful feature based on helpfullness scores of greater than 0.8. 
+- Created helpful/not helpful feature based on helpfulness scores of greater than 0.8. 
 - Combined TF-IDF text vectors with 11 custom linguistic features
 - Engineered sentiment ratio features that captured review nuance better than basic sentiment scores
 - Created writing style indicators (caps ratio, punctuation patterns) that proved surprisingly predictive
@@ -69,5 +69,15 @@ When looking at the feature importances of the random forest model, the pre-engi
 This model turns text into numerical features using TF-IDF and engineered features. The ~12,000 features pass through three hidden layers (384→192→96 neurons) that learn increasingly complex patterns: the first layer picks up useful phrases, the second layer combines them into writing patterns, and the last layer predicts overall helpfulness. Each neuron uses ReLU to keep positive signals, and the Adam optimizer adjusts the connections during training. The network learns by comparing its predictions to known helpful/unhelpful reviews, gradually improving its accuracy on new reviews.
 
 This model obtained much better evaulation metrics accross the board, and overall is much better at predicting whether a review will be helpful. However, with this neural network model we cannot see the precise feature importances like we can with the machine learning models. 
+
+## Key Takeaways
+
+This project demonstrates the classic **interpretability vs. performance trade-off** in machine learning:
+- **Random Forest (73% accuracy)**: Provided clear insights into what makes reviews helpful
+- **Neural Network (96% accuracy)**: Achieved superior performance but as a "black box"
+
+The feature engineering work proved valuable for both approaches - engineered features like polarity score and review length were among the most predictive, showing that domain knowledge still matters even with advanced models.
+
+**Next Steps:** Deploy the neural network for production use while leveraging the interpretable model insights for business recommendations.
 
 *Built with Python, scikit-learn, and pandas. No heavy ML frameworks required.*
