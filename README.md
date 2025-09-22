@@ -23,32 +23,25 @@ This classifier could help e-commerce platforms:
 
 ## Approach
 
+**Data Cleaning:**
+- Selected rows with greater than 10 helpfullness ratings.
+- Took random sample of 100k remaining rows for ease of use.
+- Cleaned up columns and combined metadata and review datasets.
+
 **Feature Engineering Innovation:**
-- Combined TF-IDF text vectors with 9 custom linguistic features
+- Created helpfull/not helpfull feature based on helpfullness scores of greater than 0.8. 
+- Combined TF-IDF text vectors with 11 custom linguistic features
 - Engineered sentiment ratio features that captured review nuance better than basic sentiment scores
 - Created writing style indicators (caps ratio, punctuation patterns) that proved surprisingly predictive
 
 **Model Architecture:**
+- Employed logistic regression, random forest, XGBoost, and LightGBM mashine learning models.
 - Multi-layer neural network (384→192→96 neurons) with ReLU activation
 - Handled class imbalance through stratified sampling
 - Used early stopping to prevent overfitting
 
-**Data Pipeline:**
-- Processed 25,000+ Amazon product reviews
-- Automated text cleaning and feature extraction
-- Scalable architecture supporting real-time predictions
-
 ## Sample Results
 
-```python
-# Correctly identifies helpful detailed review
-classifier.check_review("Works great for my small apartment. Easy setup took 15 minutes. Battery lasts about 6 hours of continuous use. Only downside is it's a bit loud.")
-# → Prediction: Helpful (confidence: 0.89)
-
-# Correctly identifies unhelpful vague review  
-classifier.check_review("It's okay I guess")
-# → Prediction: Not Helpful (confidence: 0.92)
-```
 
 ## Quick Demo
 
