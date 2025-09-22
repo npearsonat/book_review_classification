@@ -4,15 +4,14 @@ A demonstration of machine learning and neural network models that predict wheth
 
 ## Key Findings
 
-🎯 **High-impact features discovered:**
+**High-impact features discovered:**
 - **Review length matters most**: Reviews with 50-200 words are 3x more likely to be helpful
 - **Balanced sentiment wins**: Reviews mixing positive and negative words outperform purely positive ones
 - **Technical language helps**: Product-specific terminology strongly predicts helpfulness
 
-📊 **Model Performance:**
-- **82% accuracy** on 25,000+ review dataset
-- **0.87 AUC score** with excellent precision-recall balance
-- **Fast prediction**: Classifies 1,000 reviews in under 2 seconds
+**Model Performance:**
+- **96% accuracy** on 13,000+ review dataset
+- **0.995 AUC score** with good precision-recall balance
 
 ## Business Impact
 
