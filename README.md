@@ -11,9 +11,9 @@ A demonstration of machine learning and neural network models that predict wheth
 - **Strong sentiment wins**: Reviews mixing positive and negative words outperform purely positive ones
 
 **Model Performance:**
-- **96% accuracy for NN** on 13,000+ review dataset
+- **96% accuracy for neural network model** on 13,000+ review dataset
 - **0.995 AUC score** with good precision-recall balance
-- **72% accuracy using ML** with expansive feature importance investigation.
+- **72% accuracy using machine learning** with feature importance investigation.
 
 ## Business Impact
 
